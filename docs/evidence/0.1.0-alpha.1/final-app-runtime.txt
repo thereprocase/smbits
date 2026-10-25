@@ -1,0 +1,1 @@
+No fatal exception, native fatal signal, or app ANR found in the final app process log.

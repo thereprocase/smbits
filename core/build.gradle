@@ -1,0 +1,16 @@
+plugins { id 'java-library' }
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+dependencies {
+    api 'com.hierynomus:smbj:0.15.0'
+    implementation 'org.bouncycastle:bcprov-jdk18on:1.86'
+    runtimeOnly 'org.slf4j:slf4j-nop:2.0.18'
+    testImplementation 'junit:junit:4.13.2'
+}
+test { systemProperty 'smb.integration', System.getProperty('smb.integration', 'false') }
+tasks.register('testBundle', Sync) {
+    dependsOn testClasses
+    into layout.buildDirectory.dir('test-bundle')
+    from(sourceSets.main.output) { into 'classes' }
+    from(sourceSets.test.output) { into 'test-classes' }
+    from(configurations.testRuntimeClasspath.filter { it.name.endsWith('.jar') }) { into 'lib' }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.gridline.files.core.TransferTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-24T13:13:52.939Z" hostname="build-host" time="0.618">
+  <properties/>
+  <testcase name="selfCopyAndNestedDestinationAreRefused" classname="dev.gridline.files.core.TransferTest" time="0.006"/>
+  <testcase name="validatesUncAndRejectsTraversalAndCredentialUris" classname="dev.gridline.files.core.TransferTest" time="0.006"/>
+  <testcase name="pauseBlocksPublicationUntilResumed" classname="dev.gridline.files.core.TransferTest" time="0.193"/>
+  <testcase name="symbolicLinksAreNotTraversed" classname="dev.gridline.files.core.TransferTest" time="0.002"/>
+  <testcase name="tuningRespondsToBrowseLatencyAndStaysBounded" classname="dev.gridline.files.core.TransferTest" time="0.001"/>
+  <testcase name="corruptDestinationNeverDeletesMoveSource" classname="dev.gridline.files.core.TransferTest" time="0.019"/>
+  <testcase name="replaceSuccessful" classname="dev.gridline.files.core.TransferTest" time="0.011"/>
+  <testcase name="verifiedMoveDeletesOnlyCompletedSource" classname="dev.gridline.files.core.TransferTest" time="0.008"/>
+  <testcase name="diskFullNeverDeletesSource" classname="dev.gridline.files.core.TransferTest" time="0.005"/>
+  <testcase name="sourceMutationDuringCopyIsDetected" classname="dev.gridline.files.core.TransferTest" time="0.005"/>
+  <testcase name="concurrentDestinationCreationIsNeverOverwritten" classname="dev.gridline.files.core.TransferTest" time="0.009"/>
+  <testcase name="canceledMoveKeepsSourceAndCleansPartial" classname="dev.gridline.files.core.TransferTest" time="0.245"/>
+  <testcase name="verifiesMultipleFilesAndEmptyDirectories" classname="dev.gridline.files.core.TransferTest" time="0.071"/>
+  <testcase name="replaceVerifiesBeforeRemovingOldDestination" classname="dev.gridline.files.core.TransferTest" time="0.004"/>
+  <testcase name="overlappingSelectionsAreRejectedBeforeCreatingDestinationFolders" classname="dev.gridline.files.core.TransferTest" time="0.002"/>
+  <testcase name="conflictsPreserveExistingData" classname="dev.gridline.files.core.TransferTest" time="0.004"/>
+  <testcase name="replaceRollsBackWhenPublicationFails" classname="dev.gridline.files.core.TransferTest" time="0.004"/>
+  <testcase name="skipMoveRetainsSourceAndReportsAttention" classname="dev.gridline.files.core.TransferTest" time="0.002"/>
+  <testcase name="keepBothUsesNewName" classname="dev.gridline.files.core.TransferTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

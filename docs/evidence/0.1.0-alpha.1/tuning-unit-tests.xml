@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.gridline.files.core.TuningTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-24T13:13:53.562Z" hostname="build-host" time="0.021">
+  <properties/>
+  <testcase name="workloadBucketsSeparateTinyFilesFromBulkTransfers" classname="dev.gridline.files.core.TuningTest" time="0.002"/>
+  <testcase name="profileKeysSeparateRoutesRootsDirectionsAndFieldBoundaries" classname="dev.gridline.files.core.TuningTest" time="0.014"/>
+  <testcase name="onlySustainedQueuedDemandTeachesConcurrency" classname="dev.gridline.files.core.TuningTest" time="0.001"/>
+  <testcase name="autoCeilingAccountsForHeapAndReservesUiHeadroom" classname="dev.gridline.files.core.TuningTest" time="0.001"/>
+  <testcase name="noisyNewLinksRememberConservativeStartsAfterRepeatedEvidence" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <testcase name="probesKeepMeaningfulThroughputGain" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <testcase name="probesReturnToFewerWorkersWhenSpeedDoesNotImprove" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <testcase name="familiarLinkStartsConsistentlyAndAgesTowardTwo" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <testcase name="probesRejectMinorSpeedGainAtLargeLatencyCost" classname="dev.gridline.files.core.TuningTest" time="0.001"/>
+  <testcase name="failureBacksOffSavedPriorAndRequiresNewEvidence" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <testcase name="comparableSpeedPrefersFewerWorkersAndFreshConditionsReplaceOldRates" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <testcase name="idleQueueCannotGrowOrInterpretDrainingAsCongestion" classname="dev.gridline.files.core.TuningTest" time="0.001"/>
+  <testcase name="resourcePressureBoundsLearnedStartAndLiveWorkers" classname="dev.gridline.files.core.TuningTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

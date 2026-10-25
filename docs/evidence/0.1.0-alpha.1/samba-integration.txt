@@ -1,0 +1,72 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:compileTestJava UP-TO-DATE
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+> Task :core:testBundle
+
+[Incubating] Problems report is available at: file://~/code/smb-files/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 24s
+3 actionable tasks: 1 executed, 2 up-to-date
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 508B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22@sha256:2e0b81d60597f449baa56dc25d355367869d2dca4cd57e866f1e2b52af3eb55f
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 30B done
+#4 DONE 0.0s
+
+#5 [stage-0 1/4] FROM docker.io/library/alpine:3.22@sha256:2e0b81d60597f449baa56dc25d355367869d2dca4cd57e866f1e2b52af3eb55f
+#5 resolve docker.io/library/alpine:3.22@sha256:2e0b81d60597f449baa56dc25d355367869d2dca4cd57e866f1e2b52af3eb55f 0.1s done
+#5 DONE 0.1s
+
+#6 [stage-0 2/4] RUN --mount=type=secret,id=proxy_ca,target=/etc/ssl/cert.pem apk add --no-cache samba-server samba-common-tools openjdk17-jre-headless
+#6 CACHED
+
+#7 [stage-0 3/4] RUN adduser -D smbtest && printf 'test-only-password\ntest-only-password\n' | smbpasswd -a -s smbtest && mkdir /share && chown smbtest /share
+#7 CACHED
+
+#8 [stage-0 4/4] COPY smb.conf /etc/samba/smb.conf
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers done
+#9 exporting manifest sha256:1e78ef6c1f0bf9733d1c45e5964035c260d168401fcb4f2d5e7fbd0f1b368313 done
+#9 exporting config sha256:b481831bd4c1962f26ade8203f4ec11d3128c76d1ae84ce8b23fb019e42da873 0.1s done
+#9 exporting attestation manifest sha256:4e6afbcba58e4fdd1136113d9847b437eb845d793e4a76b53667b128cf359765 0.0s done
+#9 exporting manifest list sha256:9054e809f987cc39e500567f4fff1e31850d7607f2834f7f38bfb0a5595c6848 0.0s done
+#9 naming to docker.io/library/smbfiles-test-samba:local done
+#9 unpacking to docker.io/library/smbfiles-test-samba:local 0.0s done
+#9 DONE 0.2s
+JUnit version 4.13.2
+....................................
+Time: 85.298
+
+OK (36 tests)
+
+JUnit version 4.13.2
+....
+Time: 21.095
+
+OK (4 tests)
+

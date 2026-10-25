@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.gridline.files'
+    compileSdk 36
+    defaultConfig { applicationId 'dev.gridline.files'; minSdk 28; targetSdk 36; versionCode 2; versionName '0.1.0-alpha.2' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    signingConfigs {
+        review {
+            def keyPath = System.getenv('SMB_FILES_KEYSTORE')
+            if (keyPath) {
+                storeFile file(keyPath)
+                storePassword file(System.getenv('SMB_FILES_KEY_PASSWORD_FILE')).text.trim()
+                keyAlias 'smb-files'
+                keyPassword storePassword
+            }
+        }
+    }
+    buildTypes { release { debuggable false; signingConfig signingConfigs.review } }
+    packaging { resources { excludes += ['META-INF/versions/**', 'META-INF/*.SF', 'META-INF/*.RSA', 'META-INF/*.DSA', 'META-INF/INDEX.LIST'] } }
+    lint { abortOnError true }
+}
+dependencies { implementation project(':core') }

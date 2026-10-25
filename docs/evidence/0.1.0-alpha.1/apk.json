@@ -1,0 +1,15 @@
+{
+  "apk": "smb-files-0.1.0-alpha.1.apk",
+  "sha256": "b57b24bcf825c1c18e7eb6d3f57c24911262792f56fda0d019b7b581cc789db6",
+  "version": "0.1.0-alpha.1",
+  "package": "dev.gridline.files",
+  "license_assets": [
+    "assets/licenses/ASN-ONE-Apache-2.0.txt",
+    "assets/licenses/Bouncy-Castle.txt",
+    "assets/licenses/IBM-Plex-OFL.txt",
+    "assets/licenses/MBassador-MIT.txt",
+    "assets/licenses/SLF4J-MIT.txt",
+    "assets/licenses/SMB-Files-MIT.txt",
+    "assets/licenses/SMBJ-Apache-2.0.txt"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "checked": "2026-10-24",
+  "packages": [
+    [
+      "com.hierynomus:smbj",
+      "0.15.0"
+    ],
+    [
+      "com.hierynomus:asn-one",
+      "0.6.0"
+    ],
+    [
+      "org.bouncycastle:bcprov-jdk18on",
+      "1.86"
+    ],
+    [
+      "net.engio:mbassador",
+      "1.3.2"
+    ],
+    [
+      "org.slf4j:slf4j-api",
+      "2.0.18"
+    ],
+    [
+      "org.slf4j:slf4j-nop",
+      "2.0.18"
+    ]
+  ],
+  "osv": {
+    "results": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+}

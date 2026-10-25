@@ -1,0 +1,20 @@
+JUnit version 4.13.2
+......E........E.....
+Time: 0.77
+There were 2 failures:
+1) corruptDestinationNeverDeletesMoveSource(dev.gridline.files.core.TransferTest)
+java.lang.AssertionError: expected:<ATTENTION> but was:<DONE>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dev.gridline.files.core.TransferTest.corruptDestinationNeverDeletesMoveSource(TransferTest.java:107)
+2) replaceVerifiesBeforeRemovingOldDestination(dev.gridline.files.core.TransferTest)
+org.junit.ComparisonFailure: expected:<[old]> but was:<[new]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at dev.gridline.files.core.TransferTest.replaceVerifiesBeforeRemovingOldDestination(TransferTest.java:180)
+
+FAILURES!!!
+Tests run: 19,  Failures: 2
+
